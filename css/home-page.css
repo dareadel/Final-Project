@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* EAT MORE FRUIT HEADING: */
+h2 {
+font-family: LucidaGrande-Bold;
+font-size: 72px;
+color: #D0011B;
+letter-spacing: 0.45px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+
+}
+/* Header Byline */
+header{
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #0F55A7;
+letter-spacing: 0.15px;
+}
+
+/* Header Brand */
+.brand {
+font-family: SourceSansPro-Regular;
+font-size: 64px;
+color: #FFFFFF;
+letter-spacing: 0.4px;
+}
+.nav-text{
+/* The Solution: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0.15px;
+}
+
+/* The Problem: */
+.nav-text2 {
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #9012FE;
+letter-spacing: 0.15px;
+}
+.data-nav {
+    /* Data: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #0F55A7;
+letter-spacing: 0.15px;
+}
+.headline {
+    /* Obesity is a serious: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* We can change this.: */
+/* font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;*/
+}
+
+/* Learn More: */
+/* .button {
+    
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing:0.15px;
+} */
+
+
+/*Tablet*/
+/* Rectangle 4: */
+background: #FFFFFF;
+border: 1px solid #979797;
+
+
+/* Rectangle: */
+background: #FC7200;
+border: 1px solid #F87B9B;
+border-radius: 8px;
+
+
+/* Learn More: */
+font-family: SourceSansPro-Regular;
+font-size: 9px;
+color: #FFFFFF;
+letter-spacing: 0.05px;
+
+
+/* at a time.: */
+font-family: SourceSansPro-Regular;
+font-size: 14px;
+color: #D0011B;
+letter-spacing: 0.08px;
+
+
+/* We can change this.: */
+font-family: SourceSansPro-Regular;
+font-size: 14px;
+color: #D0011B;
+letter-spacing: 0.08px;
+
+
+/* granny smith apple: */
+
+
+/* Obesity is a serious: */
+font-family: SourceSansPro-Regular;
+font-size: 18px;
+color: #D0011B;
+letter-spacing: 0.11px;
+
+
+/* EAT MORE FRUIT: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* oranges: */
+
+
+/* Rectangle 5: */
+background: #FF5A3B;
+border: 1px solid #979797;
+
+
+/* Fight Obesity in Ame: */
+font-family: SourceSansPro-Regular;
+font-size: 12px;
+color: #4990E2;
+letter-spacing: 0.07px;
+
+
+/* Eat More Fruit: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0.15px;
+
+
+/* Rectangle 6: */
+background: #E0E659;
+border: 1px solid #DDE44A;
+
+
+/* Solution: */
+font-family: SourceSansPro-Regular;
+font-size: 10px;
+color: #FFFFFF;
+letter-spacing: 0.06px;
+
+
+/* Problem: */
+font-family: SourceSansPro-Regular;
+font-size: 10px;
+color: #FFFFFF;
+letter-spacing: 0.06px;
+
+
+/* Mobile */
+/* Rectangle 4: */
+background: #FFFFFF;
+border: 1px solid #979797;
+
+
+/* Rectangle: */
+background: #FC7200;
+border: 1px solid #F87B9B;
+border-radius: 8px;
+
+
+/* Learn More: */
+font-family: SourceSansPro-Regular;
+font-size: 9px;
+color: #FFFFFF;
+letter-spacing: 0.05px;
+
+
+/* at a time.: */
+font-family: SourceSansPro-Regular;
+font-size: 14px;
+color: #D0011B;
+letter-spacing: 0.08px;
+
+
+/* We can change this.: */
+font-family: SourceSansPro-Regular;
+font-size: 14px;
+color: #D0011B;
+letter-spacing: 0.08px;
+
+
+/* granny smith apple: */
+
+
+/* Obesity is a serious: */
+font-family: SourceSansPro-Regular;
+font-size: 18px;
+color: #D0011B;
+letter-spacing: 0.11px;
+
+
+/* EAT MORE FRUIT: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* oranges: */
+
+
+/* Rectangle 5: */
+background: #FF5A3B;
+border: 1px solid #979797;
+
+
+/* Fight Obesity in Ame: */
+font-family: SourceSansPro-Regular;
+font-size: 12px;
+color: #4990E2;
+letter-spacing: 0.07px;
+
+
+/* Eat More Fruit: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0.15px;
+
+
+/* Rectangle 6: */
+background: #E0E659;
+border: 1px solid #DDE44A;
+
+
+/* Solution: */
+font-family: SourceSansPro-Regular;
+font-size: 10px;
+color: #FFFFFF;
+letter-spacing: 0.06px;
+
+
+/* Problem: */
+font-family: SourceSansPro-Regular;
+font-size: 10px;
+color: #FFFFFF;
+letter-spacing: 0.06px;
+
+
+/*Desktop Miscl*/
+/* Rectangle: */
+background: #C9D126;
+border: 1px solid #979797;
+
+
+/* Data: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #0F55A7;
+letter-spacing: 0.15px;
+
+
+/* The Solution: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0.15px;
+
+
+/* The Problem: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #9012FE;
+letter-spacing: 0.15px;
+
+
+/* Rectangle 3: */
+background: #FF5A3B;
+border: 1px solid #979797;
+
+
+/* Fight Obesity in Ame: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #0F55A7;
+letter-spacing: 0.15px;
+
+
+/* Eat More Fruit: */
+font-family: SourceSansPro-Regular;
+font-size: 64px;
+color: #FFFFFF;
+letter-spacing: 0.4px;
+
+
+/* ff5a3b: */
+font-family: .SFNSText-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0.08px;
+
+
+/* ff5a3b: */
+font-family: .SFNSText-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0.08px;
+
+
+/* ff5a3b: */
+font-family: .SFNSText-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0.08px;
+
+
+/* d9e139: */
+font-family: .SFNSText-Regular;
+font-size: 14px;
+color: #D3DB27;
+letter-spacing: 0.08px;
+
+
+/* oranges: */
+
+
+/* raspberries: */
+
+
+/* E: */
+font-family: SourceSansPro-Regular;
+font-size: 64px;
+color: #FFFFFF;
+letter-spacing: 0.4px;
+
+
+/* EAT MORE FRUIT: */
+font-family: LucidaGrande-Bold;
+font-size: 72px;
+color: #D0011B;
+letter-spacing: 0.45px;
+text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+
+
+/* Obesity is a serious: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* granny smith apple: */
+
+
+/* We can change this.: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* at a time.: */
+font-family: SourceSansPro-Regular;
+font-size: 36px;
+color: #D0011B;
+letter-spacing: 0.22px;
+
+
+/* Rectangle 2: */
+background: #FF5A3B;
+border: 1px solid #F8E81C;
+border-radius: 8px;
+
+
+/* Learn More: */
+font-family: SourceSansPro-Regular;
+font-size: 24px;
+color: #FFFFFF;
+letter-spacing: 0.15px;
