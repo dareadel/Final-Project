@@ -1,69 +1,65 @@
 @charset "UTF-8";
 /* CSS Document */
 /*
- * Globals
- */
-
+ 
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+a, a:focus, a:hover {
+    color: #fff;
 }
-
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
 }
-
-
 /*
  * Base structure
  */
 * {
     box-sizing: border-box;
 }
-html,
-body {
+html, body {
     height: 100%;
     background-color: rgba(255,255,255,0.86);
-    font-size: 16px;;
+    font-size: 16px;
+    
 }
 body {
-
-  text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+    text-align: center;
+    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
+img {
+    display: block;
+    max-width: 100%
+}
+
+/*Header*/
 #branding {
-    width:50%;
+    width: 50%;
     height: 115px;
     background-color: #FF5A3B;
     margin: 0;
 }
 .navbar-brand {
     /* Eat More Fruit: */
-font-family: SourceSansPro-Regular;
-font-size: 64px;
-color: #FFFFFF;
-letter-spacing: 0.4px;
+    font-family: SourceSansPro-Regular;
+    font-size: 64px;
+    color: #FFFFFF;
+    letter-spacing: 0.4px;
 }
 .byline {
     /* Fight Obesity in Ame: */
-font-family: SourceSansPro-Regular;
-font-size: 24px;
-color: #0F55A7;
-letter-spacing: 0.15px;
- background-color: #FF5A3B;
+    font-family: SourceSansPro-Regular;
+    font-size: 24px;
+    color: #0F55A7;
+    letter-spacing: 0.15px;
+    background-color: #FF5A3B;
 }
 span.byline {
-margin-top: -23px;
-width: 100%;
-float: left;
+    margin-top: -23px;
+    width: 100%;
+    float: left;
 }
 .navbar {
     background-color: rgba(201,209,38,1.00);
@@ -71,28 +67,28 @@ float: left;
 }
 .nav-link {
     /* The Problem: */
-font-family: SourceSansPro-Regular;
-font-size: 1.875rem;
-color: #9012FE;
-letter-spacing: 0.15px;
+    font-family: SourceSansPro-Regular;
+    font-size: 1.875rem;
+    color: #9012FE;
+    letter-spacing: 0.15px;
 }
-    
 .heading {
-font-family: LucidaGrande-Bold;
-font-size: 3.5rem;
-color: #D0011B;
-letter-spacing: 0.45px;
-text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    font-family: LucidaGrande-Bold;
+    font-size: 3.5rem;
+    color: #D0011B;
+    letter-spacing: 0.45px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
 h1.heading {
-
     margin-top: 100px;
     left: 25%;
 }
 a.btn.btn-primary.btn-lg {
-    background-color:#FF5A3B;
+    background-color: #FF5A3B;
     color: #fff;
 }
+
+/*Jumbotron*/
 .jumbotron {
     background-image: url("../images/clear-white-bg.png");
     background-attachment: fixed;
@@ -104,130 +100,214 @@ a.btn.btn-primary.btn-lg {
 }
 #apple p {
     /* Obesity is a serious: */
-font-family: SourceSansPro-Regular;
-font-size: 36px;
-color: #D0011B;
-letter-spacing: 0.22px;
-    text-align: center;
-
+    font-family: SourceSansPro-Regular;
+    font-size: 36px;
+    color: #D0011B;
+    letter-spacing: 0.22px;
+   /* text-align: center;*/
 }
 .lead {
     /* Obesity is a serious: */
-font-family: SourceSansPro-Regular;
-font-size: 36px;
-color: #D0011B;
-letter-spacing: 0.22px;
+    font-family: SourceSansPro-Regular;
+    font-size: 36px;
+    color: #D0011B;
+    letter-spacing: 0.22px;
     text-align: center;
-
 }
-
 .fa-apple {
-    color:rgba(78,151,0,1.00)
+    color: rgba(78,151,0,1.00)
 }
+
+/*The Problem Section*/
 #problem {
     clear: both;
     margin-left: 0px;
     margin-right: 0px;
     background-color: rgba(190,202,30, .3);
-    
 }
 #problem .lead {
     color: #000;
 }
+#problem span {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.subLead {
+    /* Obesity is a serious: */
+    font-family: SourceSansPro-Regular;
+    font-size: 1.85rem;
+    color: #D0011B;
+    letter-spacing: 0.22px;
+}
+.description {
+    /* Half of all American: */
+    font-family: SourceSansPro-Regular;
+    font-size: 24px;
+    color: #052E5F;
+    letter-spacing: 0.15px;
+    text-align: left;
+}
+span img {
+    display: inline;
+    margin-left: 10px;
+}
+.title {
+    /* The Problem: */
+    font-family: LucidaGrande-Bold;
+    font-size: 2.5rem;
+    color: #D0011B;
+    letter-spacing: 0.4px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    text-align: center;
+}
+span.miniTitle {
+    /* Start Early Get the: */
+    font-family: LucidaGrande-Bold;
+    font-size: 1.5rem;
+    color: #052E5F;
+    letter-spacing: 0.15px;
+    text-align: left;
+}
+
+/*The Data Section*/
 #data {
     background: rgba(194,52,37,.4);
     color: #000;
 }
-
 #data .lead {
     color: #000;
 }
+/*Footer Section*/
+footer {
+    background-color: rgba(251,120,8,.5);
+}
+div p.copy {
+    
+    text-align: center;
+}
+
+
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-  
+#branding {
+    width: 50%;
+    height: 70px;
+    margin: 0;
+}
 .heading {
-font-family: LucidaGrande-Bold;
-font-size: 2.5rem;
-color: #D0011B;
-
+    font-family: LucidaGrande-Bold;
+    font-size: 1.5rem;
+    color: #D0011B;
 }
 h1.heading {
-
-    margin-top: 20px;
-    left: 25%;
-}    
-    
+    margin-top: 85px;
+    display: block;
+    width: 100%;
+}
 .navbar-brand {
     /* Eat More Fruit: */
-font-family: SourceSansPro-Regular;
-font-size: 32px;
-color: #FFFFFF;
-    margin-bottom: 15px;
-    margin-top: 10px;
-
+    font-family: SourceSansPro-Regular;
+    font-size: 1.85rem;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .byline {
     /* Fight Obesity in Ame: */
-font-family: SourceSansPro-Regular;
-font-size: 20px;
-color: #0F55A7;
-letter-spacing: 0.15px;
- background-color: #FF5A3B;
-
+    font-family: SourceSansPro-Regular;
+    font-size: 1rem;
+    color: #0F55A7;
+    letter-spacing: 0.15px;
+    background-color: #FF5A3B;
 }
 jumbotron span.byline {
-margin-top: -23px;
-width: 100%;
-float: left;
+    /*margin-top: -23px;*/
+    width: 100%;
+    float: left;
 }
-    .row p {
-       font-size: 1.75rem;
-    } 
-    
-    
+.row p {
+    font-size: 1.5rem;
+}
+#fruits img {
+    width: 65%;
+    margin: auto;
+}
 #apple p {
     /* Obesity is a serious: */
-font-family: SourceSansPro-Regular;
-font-size: 30px;
-color: #D0011B;
-text-align: center;
+    font-family: SourceSansPro-Regular;
+    font-size: 1.25rem;
+    color: #D0011B;
+    text-align: center;
     margin-bottom: 10px;
-    
-
+    display: block;
+    width: 100%;
 }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
-
 .heading {
-font-family: LucidaGrande-Bold;
-font-size: 1.75rem;
-color: #D0011B;
-
+    font-family: LucidaGrande-Bold;
+    font-size: 1.5rem;
+    color: #D0011B;
 }
 h1.heading {
-
-    margin-top: 10px;
+    margin-top: 55px;
     left: 25%;
-}        
+}
+/*.row #fruits img {
+
+    max-width: 100%;
+    height: auto;
+    }*/
+div.col-md-4 {
+    width: 65%;
+    margin: auto;
+}
+jumbotron {
+    height: 100%;
+}
+#fruits img {
+    width: 80%;
+    margin: auto;
+}
 #apple p {
     /* Obesity is a serious: */
-font-family: SourceSansPro-Regular;
-font-size: 30px;
-color: #D0011B;
-text-align: center;
+    font-family: SourceSansPro-Regular;
+    color: #D0011B;
+    text-align: center;
     margin-bottom: 30px;
-    
-
+    font-size: 1.5rem;
 }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991px) {  }
+@media (min-width: 768px) and (max-width: 991px) {
+#fruits img {
+    width: 80%;
+    margin: auto;
+}
+}
 
 /*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {  }
+@media (min-width: 992px) and (max-width: 1199px) {
+#fruits img {
+    width: 80%;
+    margin: auto;
+}
+}
 
 /*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {
+#fruits img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+h1.heading {
+    margin-top: 55px;
+    left: 25%;
+}
+}
