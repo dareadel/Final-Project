@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato|Open+Sans|Oswald|Roboto|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700');
 /*
  
 /* Links */
@@ -33,56 +36,84 @@ img {
     display: block;
     max-width: 100%
 }
+.navbar {
+    background-color: rgba(201,209,38,1.00);
+    padding: 0;
+}
 
 /*Header*/
 #branding {
     width: 50%;
-    height: 115px;
-    background-color: #FF5A3B;
+    height: 70px;
     margin: 0;
+    background-color: #FF5A3B;
+}
+.heading {
+    font-family: Arimo;
+    font-size: 2.5rem;
+    color: #D0011B;
+}
+h1.heading {
+    display: block;
+    width: 100%;
+    font-size: 3.5rem;
+    margin-top: 35px;
 }
 .navbar-brand {
     /* Eat More Fruit: */
-    font-family: SourceSansPro-Regular;
-    font-size: 64px;
+    font-family: divSource+Sans+Pro;
+    font-size: 2.5rem;
     color: #FFFFFF;
-    letter-spacing: 0.4px;
+    
+    
+    
 }
 .byline {
     /* Fight Obesity in Ame: */
-    font-family: SourceSansPro-Regular;
-    font-size: 24px;
+    font-family: divSource+Sans+Pro;
+    font-size: 1rem;
     color: #0F55A7;
     letter-spacing: 0.15px;
     background-color: #FF5A3B;
 }
+jumbotron span.byline {
+    /*margin-top: -23px;*/
+    width: 100%;
+    float: left;
+}
+.row p {
+    font-size: 1.5rem;
+}
+#fruits img {
+    width: 55%;
+    margin: auto;
+}
+#apple p {
+    /* Obesity is a serious: */
+    font-family: divSource+Sans+Pro;
+    font-size: 1.5rem;
+    color: #D0011B;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+
 span.byline {
     margin-top: -23px;
     width: 100%;
     float: left;
 }
-.navbar {
-    background-color: rgba(201,209,38,1.00);
-    padding: 0;
-}
+
 .nav-link {
     /* The Problem: */
-    font-family: SourceSansPro-Regular;
+    font-family: divSource+Sans+Pro;
     font-size: 1.875rem;
     color: #9012FE;
     letter-spacing: 0.15px;
 }
-.heading {
-    font-family: LucidaGrande-Bold;
-    font-size: 3.5rem;
-    color: #D0011B;
-    letter-spacing: 0.45px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-}
-h1.heading {
-    margin-top: 100px;
-    left: 25%;
-}
+
 a.btn.btn-primary.btn-lg {
     background-color: #FF5A3B;
     color: #fff;
@@ -97,18 +128,12 @@ a.btn.btn-primary.btn-lg {
     height: 100vh;
     max-height: 100%;
     text-align: center;
+    
 }
-#apple p {
-    /* Obesity is a serious: */
-    font-family: SourceSansPro-Regular;
-    font-size: 36px;
-    color: #D0011B;
-    letter-spacing: 0.22px;
-   /* text-align: center;*/
-}
+
 .lead {
     /* Obesity is a serious: */
-    font-family: SourceSansPro-Regular;
+    font-family: divSource+Sans+Pro;
     font-size: 36px;
     color: #D0011B;
     letter-spacing: 0.22px;
@@ -117,13 +142,15 @@ a.btn.btn-primary.btn-lg {
 .fa-apple {
     color: rgba(78,151,0,1.00)
 }
-
+hr {
+    background: rgba(194,52,37,.4);
+}
 /*The Problem Section*/
 #problem {
     clear: both;
     margin-left: 0px;
     margin-right: 0px;
-    background-color: rgba(190,202,30, .3);
+    /*background-color: rgba(190,202,30, .3);*/
 }
 #problem .lead {
     color: #000;
@@ -135,14 +162,14 @@ a.btn.btn-primary.btn-lg {
 }
 .subLead {
     /* Obesity is a serious: */
-    font-family: SourceSansPro-Regular;
+    font-family: divSource+Sans+Pro;
     font-size: 1.85rem;
     color: #D0011B;
     letter-spacing: 0.22px;
 }
 .description {
     /* Half of all American: */
-    font-family: SourceSansPro-Regular;
+    font-family: divSource+Sans+Pro;
     font-size: 24px;
     color: #052E5F;
     letter-spacing: 0.15px;
@@ -154,7 +181,7 @@ span img {
 }
 .title {
     /* The Problem: */
-    font-family: LucidaGrande-Bold;
+    font-family: Arimo;
     font-size: 2.5rem;
     color: #D0011B;
     letter-spacing: 0.4px;
@@ -163,7 +190,7 @@ span img {
 }
 span.miniTitle {
     /* Start Early Get the: */
-    font-family: LucidaGrande-Bold;
+    font-family: Arimo;
     font-size: 1.5rem;
     color: #052E5F;
     letter-spacing: 0.15px;
@@ -172,7 +199,7 @@ span.miniTitle {
 
 /*The Data Section*/
 #data {
-    background: rgba(194,52,37,.4);
+   /* background: rgba(194,52,37,.4);*/
     color: #000;
 }
 #data .lead {
@@ -188,56 +215,12 @@ div p.copy {
 }
 
 
-
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
-#branding {
-    width: 50%;
-    height: 70px;
-    margin: 0;
-}
-.heading {
-    font-family: LucidaGrande-Bold;
-    font-size: 1.5rem;
-    color: #D0011B;
-}
-h1.heading {
-    margin-top: 85px;
-    display: block;
-    width: 100%;
-}
-.navbar-brand {
-    /* Eat More Fruit: */
-    font-family: SourceSansPro-Regular;
-    font-size: 1.85rem;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.byline {
-    /* Fight Obesity in Ame: */
-    font-family: SourceSansPro-Regular;
-    font-size: 1rem;
-    color: #0F55A7;
-    letter-spacing: 0.15px;
-    background-color: #FF5A3B;
-}
-jumbotron span.byline {
-    /*margin-top: -23px;*/
-    width: 100%;
-    float: left;
-}
-.row p {
-    font-size: 1.5rem;
-}
-#fruits img {
-    width: 65%;
-    margin: auto;
-}
 #apple p {
     /* Obesity is a serious: */
-    font-family: SourceSansPro-Regular;
-    font-size: 1.25rem;
+    font-family: divSource+Sans+Pro;
+    /*font-size: 4vh;*/
     color: #D0011B;
     text-align: center;
     margin-bottom: 10px;
@@ -248,54 +231,85 @@ jumbotron span.byline {
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
+ 
+     
+
 .heading {
-    font-family: LucidaGrande-Bold;
-    font-size: 1.5rem;
+    font-family: Arimo;
+    font-size: 2.75rem;
     color: #D0011B;
 }
 h1.heading {
-    margin-top: 55px;
+    font-size: 3rem;
+margin-top: 15px;
     left: 25%;
 }
-/*.row #fruits img {
-
-    max-width: 100%;
-    height: auto;
-    }*/
-div.col-md-4 {
-    width: 65%;
+    /* #fruits img {
+    width: 100%;
+    width: auto;
     margin: auto;
-}
-jumbotron {
-    height: 100%;
-}
-#fruits img {
-    width: 80%;
-    margin: auto;
-}
+} */
 #apple p {
-    /* Obesity is a serious: */
-    font-family: SourceSansPro-Regular;
+    
+    font-family: divSource+Sans+Pro;
+    font-size: 1.75rem;
     color: #D0011B;
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
+    
 }
 
-/*// Medium devices (tablets, 768px and up)*/
+
 @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+    /* Eat More Fruit: */
+    font-family: divSource+Sans+Pro;
+    font-size: 2.85rem;
+    color: #FFFFFF;
+    margin-top: -10px
+ 
+}
 #fruits img {
-    width: 80%;
+    width: 100%;
+    height: auto;
     margin: auto;
 }
+ #apple p {
+    /* Obesity is a serious: */
+    font-family: divSource+Sans+Pro;
+    font-size: 2.25rem;
+    color: #D0011B;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+    
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
-#fruits img {
-    width: 80%;
+
+    h1.heading {
+    font-size: 4rem;
+    left: 25%;
+    }
+    #fruits img {
+    width: 100%;
+    height: auto;
     margin: auto;
+}
+    #apple p {
+    /* Obesity is a serious: */
+    font-family: divSource+Sans+Pro;
+    font-size: 2.25rem;
+    color: #D0011B;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
 }
 
@@ -307,7 +321,18 @@ jumbotron {
     margin: auto;
 }
 h1.heading {
-    margin-top: 55px;
+    font-size: 4rem;
+margin-top: 10px;
     left: 25%;
+}
+     #apple p {
+    /* Obesity is a serious: */
+    font-family: divSource+Sans+Pro;
+    font-size: 2.25rem;
+    color: #D0011B;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
 }
