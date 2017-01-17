@@ -22,10 +22,11 @@
 <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="90">
+<div id="navbar">
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top .navbar-toggler-right">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div id="branding"> <a class="navbar-brand ml-2" href="#home">Eat Fruit a Day</a> <span class="byline">Fight Obesity in America</span> </div>
+  <div id="branding"> <a class="navbar-brand ml-2" href="#home">Eat More Fruit</a> <span class="byline">Fight Obesity in America</span> </div>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ml-5 mr-auto">
       <li class="nav-item active"> <a class="nav-link mr-3" href="#problem">Problem <span class="sr-only">(current)</span></a> </li>
@@ -35,12 +36,13 @@
     </ul>
   </div>
 </nav>
+</div>
 <div class="jumbotron" data-type="background" data-speed="5">
   <div class="container">
     <h1 class="heading">EAT MORE FRUITS</h1>
     <div class="row" id="fruits">
       <div class="col-md-6"><img src="images/oranges@2x.png"  alt=""/></div>
-      <div class="col-md-6"><img src="images/raspberries.png"   alt=""/></div>
+      <div class="col-md-6"><img src="images/raspberries.jpg"   alt=""/></div>
     </div>
     <div class="row">
      
@@ -49,11 +51,11 @@
           We can change this. One <i class="fa fa-apple" aria-hidden="true"></i> at a time.</p>
          </div>
     </div>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <p><a class="btn btn-primary btn-lg" href="#problem" role="button">Learn more</a></p>
   </div>
 </div>
 <hr>
-<div class="row parallax"  id="problem" >
+<div class="row"  id="problem" >
   <div class="container">
     <div class="col col-md-12">
       <h2 class="title">The Problem</h2>
@@ -61,12 +63,12 @@
       <p class="description">Half of all American adults have one or more chronic diseases, often related to poor diet. Two out of three American adults are obese or overweight placing them at risk of heart disease, cancer and Type 2 diabetes.</p>
       <span class="people"><img src="images/Group 2@1x.jpg" alt=""/><img src="images/Group 2@1x.jpg" alt=""/><img src="images/Group 3@1x.jpg" alt=""/></span>
       <p class="description">A healthy diet consisting of fresh fruits and vegetables is the key to promoting good health.  Discover how your state compares to the rest of the nation in comsuming a healthy diet, then take the pledge to fight obesity in America</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      <p><a class="btn btn-primary btn-lg" href="#data" role="button">View Data</a></p>
     </div>
   </div>
 </div>
 <hr>
-<div id="solution" class="row parallax">
+<div id="solution" class="row">
   <div class="container">
     <div class="col col-md-12">
       <h2 class="title">The Solution</h2>
@@ -92,7 +94,7 @@
   </div>
 </div>
 <hr>
-<div id="data" class="row title parallax">
+<div id="data" class="row title">
   <div class="col col-md-12">
     <div class="container">
       <h2 class="title">The Data</h2>
@@ -102,10 +104,10 @@
       <div class="row">
         <div class="col-md-4 offset-md-4">
           <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
+           <!-- <div class="form-group">
               <input type="text" class="form-control" placeholder="Search Our Database">
-            </div>
-            <p><a class="btn btn-primary btn-lg" href="data.html" role="button">Submit</a></p>
+            </div>-->
+            <p><a class="btn btn-primary btn-lg" href="accdata.html" role="button">View Data</a></p>
           </form>
         </div>
       </div>
@@ -113,7 +115,7 @@
   </div>
 </div>
 <hr>
-<div id="getInvolved" class="row parallax">
+<div id="getInvolved" class="row">
   <div class="col col-md-12 col-sm-12">
     <h2 class="title">Get Involved</h2>
     <p class="lead">"Take the Pledge to Fight Obesity"</p>
@@ -179,35 +181,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> 
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> --> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
-<script>
-    $(function() {
-	'use strict';
-	// Cache the Window object
-	var $window = $(window);
-	
-	// Parallax Backgrounds
-	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
-	
-	$('.parallax[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
-		
-		$(window).scroll(function() {
-		
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!								
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-			
-			// Put together our final background position
-			var coords = '100% '+ yPos + 'px';
-			
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-			
-		}); // end window scroll
-	});
-	
-});
-    
-</script>
+
 </body>
 </html>

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#overallContainer { background:url("../images/Cork-Background.gif") repeat; width:685px; margin:0 auto; font-family: 'Handlee', cursive; color:#001e3a; box-shadow: -5px 5px 5px #888888; }
+
+#mast { background:url("../images/ash-white.jpg") center top; height: 296px; margin-bottom:10px; }
+
+#mastHeadline { position: relative; top: 95px; left: 50px; }
+#mastCopy { position: relative; top: 80px; left: 50px; width: 550px; padding: 0 10px; }
+
+#mast h2 { font-size:40px; text-transform:none; font-weight:bold; }
+
+#mastHeadline > h2 > span { color:#51b5e0; }
+
+#mast p { font-family: 'Open Sans', sans-serif; font-size: 14px; }
+
+#topTen > ul { list-style-type:none; }
+
+#topTen > ul  li { height: 301px; margin-bottom:5px; }
+
+#topTen > ul > li > div.post_it { position: relative; display:inline-block; background:#ffff88; -webkit-box-shadow: -5px 5px 5px #333333; -moz-box-shadow: -5px 5px 5px #333333; box-shadow: -5px 5px 10px #333333; width: 250px; height: 250px; padding:10px; }
+
+div.post_it.left_tape::before { content: ' '; display: block; position: absolute; left: 82px; top: -15px; width: 80px; height: 25px; z-index: 2; background-color: rgba(243,245,228,0.5); border: 2px solid rgba(255,255,255,0.5); -webkit-box-shadow: -1px 2px 2px #333333; -moz-box-shadow: -1px 2px 2px #333333; box-shadow: -1px 2px 2px #333333; -webkit-transform: rotate(-2deg);  -moz-transform: rotate(-2deg);  -o-transform: rotate(-2deg); -ms-transform:rotate(-2deg); }
+
+div.post_it::before { content: ' '; display: block; position: absolute;  left: 80px; top: -15px; width: 82px; height: 25px; z-index: 2; background-color: rgba(243,245,228,0.5); border: 2px solid rgba(255,255,255,0.5); -webkit-box-shadow: -1px 2px 2px #333333; -moz-box-shadow: -1px 2px 2px #333333; box-shadow: -1px 2px 2px #333333; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -o-transform: rotate(2deg); -ms-transform:rotate(2deg); }
+
+#topTen > ul > li > div.toptenImage { display:inline-block; margin: 0 15px; }
+
+.left_float { float:left; }
+
+.right_float { float: right; }
+
+.rotate_left { transform:rotate(-1deg); }
+
+.rotate_right { transform:rotate(1deg); }
+
+#topTen > ul > li > div > h3 { font-size: 20px; text-transform:none; margin-top: 10px; }
+
+#topTen > ul > li > div.post_it > p { font-family: 'Open Sans', sans-serif; font-size: 14px; }
+
+#topTen > ul > li > div.post_it > p > a:link { color: #397F9D; }
+
+#disneyCredit, #bottom_banner { text-align: center; }
+
+#bottom_banner img { border-style: none; }
+
+span .lead {
+    font-weight: 900;
+    color: #fff;
+}

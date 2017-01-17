@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+  <!--[if IE 7]><html lang="en" class="ie ie7"><![endif]-->
+  <!--[if IE 8]><html lang="en" class="ie ie8"><![endif]-->
+  <!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <title>Percent of Adults Consuming Fruits and Vegetables Less than Once Daily </title>
+    <meta name=viewport content="width=device-width, maximum-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+    <style>
+       /* body {
+        background-image: url(/images/glossy-bg.jpg);
+            background-attachment: fixed;
+            background-size:cover;
+        }*/
+      .red,
+      .red:hover,
+      .red:focus,
+      .red:active {
+        font-size:1.7em;
+        color:red;
+           }
+        
+        .green,
+        .green:hover,
+      .green:focus,
+      .green:active {
+        font-size:1.7em;
+        color:green;
+           }
+        
+        .blue,
+        .blue:hover,
+      .blue:focus,
+      .blue:active {
+        font-size:1.7em;
+        color:blue;
+           }
+        
+    </style>
+  </head>
+  <body style="background-color: rgba(103,183,106,0.61)">
+    
+<div id="navbar">
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top .navbar-toggler-right">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div> <a class="navbar-brand ml-2" href="index.html#branding">Fruit and Vegetable Consumption (Min. Once Daily)</a> <span class="byline">(Min. Once Daily)</span> </div>
+  <!--<div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-5 mr-auto">
+      <li class="nav-item active"> <a class="nav-link mr-3" href="#problem">Problem <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link mr-3" href="#solution">Solution</a> </li>
+      <li class="nav-item active"> <a class="nav-link mr-3" href="#data">Data<span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link mr-3" href="#getInvolved">Get Involved</a> </li>
+    </ul>
+  </div>-->
+</nav>
+</div>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#tableTab" aria-controls="tableTab" role="tab" data-toggle="tab">U.S. Data</a></li>
+        <li role="presentation"><a href="#stateTab" aria-controls="stateTab" role="tab" data-toggle="tab">By State</a></li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="tableTab">
+          <div id="tableParent"></div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="stateTab">
+          <div id="selectParent"></div>
+          <div id="state"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var url = 'https://api.myjson.com/bins/1b6zz3';
+      window.urlBelow = 'fruit_veg_rec.html';
+      window.urlNearAverage = 'index.html#solution';
+      window.urlAbove = 'https://s23.postimg.org/xrbd0d0u3/raw.gif';
+      window.stateCode = {
+        'alabama': 'al',
+        'alaska': 'ak',
+        'arizona': 'az',
+        'arkansas': 'ar',
+        'california': 'ca',
+        'colorado': 'co',
+        'connecticut': 'ct',
+        'delaware': 'de',
+        'district of columbia': 'dc',
+        'florida': 'fl',
+        'georgia': 'ga',
+        'hawaii': 'hi',
+        'idaho': 'id',
+        'illinois': 'il',
+        'indiana': 'in',
+        'iowa': 'ia',
+        'kansas': 'ks',
+        'kentucky': 'ky',
+        'louisiana': 'la',
+        'maine': 'me',
+        'maryland': 'md',
+        'massachusetts': 'ma',
+        'michigan': 'mi',
+        'minnesota': 'mn',
+        'mississippi': 'ms',
+        'missouri': 'mo',
+        'montana': 'mt',
+        'nebraska': 'ne',
+        'nevada': 'nv',
+        'new hampshire': 'nh',
+        'new jersey': 'nj',
+        'new mexico': 'nm',
+        'new york': 'ny',
+        'north carolina': 'nc',
+        'north dakota': 'nd',
+        'ohio': 'oh',
+        'oklahoma': 'ok',
+        'oregon': 'or',
+        'pennsylvania': 'pa',
+        'rhode island': 'ri',
+        'south carolina': 'sc',
+        'south dakota': 'sd',
+        'tennessee': 'tn',
+        'texas': 'tx',
+        'utah': 'ut',
+        'vermont': 'vt',
+        'virginia': 'va',
+        'washington': 'wa',
+        'west virginia': 'wv',
+        'wisconsin': 'wi',
+        'wyoming': 'wy'
+      };
+
+      var data = $.ajax({
+        dataType: "json",
+        url: url,
+        success: function(data){
+          window.json = data;
+          createTable();
+          createSelect();
+        }
+      });
+
+      function createSelect(){
+        var select = $('<select onChange="loadState(this.value)"><option value="false">Select a state</option></select>');
+        var json = window.json;
+        var states = [];
+        for(var key in json){
+          states.push(json[key]['State']);
+        }
+        states.sort();
+        for(var i in states){
+          var state = states[i];
+          var short = 'undefined';
+          if(state.toLowerCase() in window.stateCode){
+            short = window.stateCode[state.toLowerCase()];
+          }
+          select.append('<option data-short="'+short+'" value="'+state.toLowerCase()+'">'+state+'</option>');
+        }
+        $('#selectParent').append(select);
+      }
+
+      function createTable(){
+        var json = window.json;
+        var table = $('<table id="table" class="table table-hover"></table>');
+        var header = false;
+        var body = $('<tbody></tbody>');
+        for(var key in json){
+          if(!header){
+            header = $('<thead><tr></tr></thead>');
+            for(var title in json[key]){
+              header.find('tr').append('<th>'+title+'</th>');
+            }
+          }
+          var line = $('<tr></tr>');
+          for(var key2 in json[key]){
+            line.append('<td>'+json[key][key2]+'</td>');
+          }
+          body.append(line);
+        }
+        table.append(header);
+        table.append(body);
+        $('#tableParent').append(table);
+        $('#table').DataTable({
+          'paging': false
+        });
+      }
+
+      function loadState(stateName){
+        var json = window.json;
+        var short = 'undefined';
+        // if it's the placeholder, then just delete the previous content
+        if(stateName == 'false'){
+          $('#state').replaceWith('<div id="state"></div>');
+          return true;
+        }
+        if(stateName.toLowerCase() in window.stateCode){
+          stateShort = window.stateCode[stateName.toLowerCase()];
+        }
+        var stateDiv = $('<div id="state"></div>');
+          ('br');
+        stateDiv.append('<p><a target="_blank" href="http://stateofobesity.org/states/'+stateShort+'/">State Obesity Data</a></p>');
+        stateDiv.append('<p><a target="_blank" href="#'+stateShort+'">link with short</a></p>');
+      
+        for(var key in json){
+          if(json[key]['State'].toLowerCase() == stateName){
+            var state = json[key];
+            var fruitRanking = false;
+            var vegRanking = false;
+            switch(state['Fruits Ranking']){ // values are 'below', 'near ave' and 'above' (is in "default")
+              case 'below':
+                fruitRanking = $('<p>Fruit Consumption Ranking: <a class="red" target="_blank" href="'+window.urlBelow+'" target="_blank">Below Average</a></p>');//f-below
+                break;
+              case 'near ave':
+                fruitRanking = $('<p>Fruit Consumption Ranking: <a class="blue" target="_blank" href="'+window.urlNearAverage+'" target="_blank">Average</a></p>');//f-ave
+                break;
+              default:
+                fruitRanking = $('<p>Fruit Consumption Ranking: <a class="green" target="_blank" href="'+window.urlAbove+'" target="_blank">Above Average</a></p>');
+                break;
+            }
+            switch(state['Veg Ranking']){
+              case 'below':
+                vegRanking = $('<p>Vegetable Consumption Ranking: <a class="red" target="_blank" href="'+window.urlBelow+'" target="_blank">Below Average</a></p>');//v-below
+                break;
+              case 'near ave':
+                vegRanking = $('<p>Vegetable Consumption Ranking: <a class="blue" target="_blank" href="'+window.urlNearAverage+'" target="_blank">Average</a></p>');//ave-bel
+                break;
+              default:
+                vegRanking = $('<p>Vegetable Consumption Ranking: <a class="green" target="_blank" href="'+window.urlAbove+'" target="_blank">Above Average</a></p>');//f-above
+                break;
+            }
+            stateDiv.append('<p>Fruits: '+state['Fruits']+'</p>');
+            stateDiv.append(fruitRanking);
+            stateDiv.append('<p>Vegetables: '+state['Vegetables']+'</p>');
+            stateDiv.append(vegRanking);
+          }
+        }
+        $('#state').replaceWith(stateDiv);
+      }
+
+    </script>
+  </body>
+</html>
