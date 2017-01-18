@@ -175,6 +175,13 @@ span.miniTitle {
     letter-spacing: 0.15px;
     text-align: left;
 }
+
+/*The Solution Section*/
+#solution {
+    padding-left: 7px;
+    padding-right: 5px;
+}
+
 /*The Data Section*/
 #data {
     /* background: rgba(194,52,37,.4);*/
@@ -200,7 +207,7 @@ div p.copy {
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) {
+@media (max-width: 540px) {
 #apple p {
     font-family: divSource+Sans+Pro;
     /*font-size: 4vh;*/
